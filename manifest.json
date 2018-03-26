@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+
+  "name": "Codechef Comparator",
+  "description": "This extension will compare Codechef performance of two users.",
+  "version": "1.0",
+  "icons": {
+      "16": "img/icon16.png",
+      "48": "img/icon48.png",
+      "128": "img/icon128.png"
+   },
+   "background": {
+     "scripts": ["background.js"],
+     "persistent": false
+   },
+  "browser_action": {
+    "name": "codechefcomparator"
+  },
+  "permissions": [
+   "activeTab",
+   "https://codechefcomparator.herokuapp.com/compare_rank/*"
+   ]
+}
